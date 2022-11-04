@@ -64,6 +64,7 @@ header {
     background-position: bottom;
     background-size: 100% auto;
     padding: 3rem;
+    height: 65rem;
 }
 
 @media (min-width: 1024px) {
@@ -104,8 +105,9 @@ header {
     margin-bottom: 6rem;
 }
 
-.main img {
-    margin-bottom: 14rem;
+.arrow {
+    position: absolute;
+    top: -12rem;
 }
 
 @media (min-width: 1024px) {
