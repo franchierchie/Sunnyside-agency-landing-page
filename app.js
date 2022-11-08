@@ -4,11 +4,16 @@ const arrowObj = document.querySelector('.arrow');
 
 hamburger.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('hidden');
+    arrowObj.classList.toggle('hidden');
 });
 
 window.addEventListener('load', () => {
     let timerId = null;
     let y = 0;
+
+    if (window.innerWidth < 1024) {
+        hamburgerMenu.classList.toggle('hidden');
+    }
     
     timerId = setInterval(arrow, 5);
 
